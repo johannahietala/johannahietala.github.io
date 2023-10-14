@@ -29,20 +29,20 @@ Here's some words about the book _One Hundred Years..._
 ## Links
 > 1. make a link to www.google.com, with link text that says "Search for it."
 
-[Search for it.](www.google.com)
+[Search for it.](https://www.google.com)
 > 2. make the phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
 
 [You're **really, really** going to want to see this.](www.dailykitten.com)
 > 3. make the text a heading four, and turn the phrase "the BBC" into a link to www.bbc.com/news
 
-#### The Latest News from [the BBC](www.bbc.com/news)
+#### The Latest News from [the BBC](https://www.bbc.com/news)
 > 4. Call the first reference tag "a fun place", and make it link to www.zombo.com; make the second link out to www.stumbleupon.com
 
 Do you want to [see something fun][a fun place]?
 Well, do I have [the website for you][another fun place]!
 
-[a fun place]: www.zombo.com
-[another fun place]: www.stumbleupon.com
+[a fun place]: https://www.zombo.com
+[another fun place]: https://www.stumbleupon.com
 ## Images
 > 1. In the box below, turn the link to an image, and fill out the alt text brackets to say "A pretty tiger":
 
