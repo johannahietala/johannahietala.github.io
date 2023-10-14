@@ -89,11 +89,13 @@ I read this interesting quote the other day:
 3. Rub the tomatoes in flour
 
 >3: You can choose to add italics, bold, or links within lists, as you might expect. In the box below, turn the Latin names for the plants into italics.
+
 * Azalea (_Ericaceae Rhododendron_)
 * Chrysanthemum (_Anthemideae Chrysanthemum_)
 * Dahlia (_Coreopsideae Dahlia_)
 
 >4: In the box below, turn the character's characteristics into sub-bullets.
+
 * Calculus
     * A professor
     * Has no hair
