@@ -32,7 +32,7 @@ Here's some words about the book _One Hundred Years..._
 [Search for it.](https://www.google.com)
 > 2. make the phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
 
-[You're **really, really** going to want to see this.](www.dailykitten.com)
+[You're **really, really** going to want to see this.](https://www.dailykitten.com)
 > 3. make the text a heading four, and turn the phrase "the BBC" into a link to www.bbc.com/news
 
 #### The Latest News from [the BBC](https://www.bbc.com/news)
@@ -79,6 +79,7 @@ I read this interesting quote the other day:
 * Flour 
 * Cheese 
 * Tomatoes
+
 > 2. In the box below, turn the rest of the recipe into an ordered list.
 1. Cut the cheese
 2. Slice the tomatoes
