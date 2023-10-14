@@ -7,14 +7,15 @@ Writing in Markdown is _not_ that hard!
 >2: make the word "will" bold
 
 I **will** complete these lessons!
->3: make the words "Of course" italic, and the words "a little moxie" bold.
+>3: make the words "Of course" italic, and the words "a little moxie" bold
 
 _"Of course,"_ she whispered. Then, she shouted: "All I need is **a little moxie!"**
 >4: make the words "This is unbelievable" both bold and italic
 
 If you're thinking to yourself, **_This is unbelievable_**, you'd probably be right.
 ## Headers
-> 1. make each header the right size
+
+>1: make each header the right size
 
 # Header One
 ## Header Two
