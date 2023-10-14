@@ -104,7 +104,9 @@ I read this interesting quote the other day:
     * An opera singer
     * Has white hair
     * Is possibly mentally unwell
+
 >5: In the box below, convert the bullet points into their own paragraphs.
+
 1. Cut the cheese
 
    Make sure that the cheese is cut into little triangles.
