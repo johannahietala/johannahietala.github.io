@@ -23,7 +23,7 @@ If you're thinking to yourself, **_This is unbelievable_**, you'd probably be ri
 #### Header Four
 ##### Header Five
 ###### Header Six
->2: make the first line a heading level four, and italicize the name of the book:
+>2: make the first line a heading level four, and italicize the name of the book
 
 #### Colombian Symbolism in One Hundred Years of Solitude
 Here's some words about the book _One Hundred Years..._
