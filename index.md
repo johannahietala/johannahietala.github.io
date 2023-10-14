@@ -62,7 +62,7 @@ Well, do I have [the website for you][another fun place]!
 I read this interesting quote the other day:
 >"Her eyes had called him and his soul had leaped at the call. To live, to err, to fall, to triumph, to recreate life out of life!"
 
-> 2. Make the entire quotation a block quote by inserting a caret on each line.
+>2. Make the entire quotation a block quote by inserting a caret on each line.
 
 >Once upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo...
 >
@@ -70,7 +70,7 @@ I read this interesting quote the other day:
 >
 >He was baby tuckoo. The moocow came down the road where Betty Byrne lived: she sold lemon platt.
 
-> 3. In the box below, make the French text italic (not including the exclamation point). Also, turn the entire quote into a blockquote.
+>3. In the box below, make the French text italic (not including the exclamation point). Also, turn the entire quote into a blockquote.
 
 >He left her quickly, fearing that her intimacy might turn to jibing and wishing to be out of the way before she offered her ware to another, a tourist from England or a student of Trinity. Grafton Street, along which he walked, prolonged that moment of discouraged poverty. In the roadway at the head of the street a slab was set to the memory of Wolfe Tone and he remembered having been present with his father at its laying. He remembered with bitterness that scene of tawdry tribute. There were four French delegates in a brake and one, a plump smiling young man, held, wedged on a stick, a card on which were printed the words: _VIVE L'IRLANDE_!
 
@@ -86,10 +86,12 @@ I read this interesting quote the other day:
 1. Cut the cheese
 2. Slice the tomatoes
 3. Rub the tomatoes in flour
+
 >3. You can choose to add italics, bold, or links within lists, as you might expect. In the box below, turn the Latin names for the plants into italics.
 * Azalea (_Ericaceae Rhododendron_)
 * Chrysanthemum (_Anthemideae Chrysanthemum_)
 * Dahlia (_Coreopsideae Dahlia_)
+
 > 4. In the box below, turn the character's characteristics into sub-bullets.
 * Calculus
     * A professor
@@ -110,6 +112,7 @@ I read this interesting quote the other day:
  
    For more help on tomato slicing, see Thomas Jefferson's seminal essay _Tom Ate Those_.
 ## Paragraphs
+
 > 1. In the box below, insert the necessary number of spaces to make the poem render correctly:
 
 We pictured the meek mild creatures where  
