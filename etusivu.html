@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+<!--Tämä osio sisältää sivustolle, selaimille tärkeää tietoa-->
+
+<head>
+    <!--Jokaisella sivulla uniikki otsikko-->
+    <title>Villakoirat</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Johanna Hietala">
+    <meta name="description" content="Villakoira sivusto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./kuvat/favicon.ico">
+    <link rel="stylesheet" href="etusivu.css">
+</head>
+<!--Käyttäjälle näkyvä osio alkaa tästä-->
+
+<body>
+    <!--containerin sisällä kaikki toiminto-->
+    <div class="container">
+        <header class="header">
+            <div class="logo">VILLAKOIRAT</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href=sivu2.html>Rodusta</a></li>
+                    <li><a href="sivu3.html">Turkinhoito</a></li>
+                    <li><a href="sivu4.html">Harrastus</a></li>
+                    <li><a href="lomake.html">Lomake</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <!--mainin alla voi olla section tai article-->
+            <section class="intro">
+                <h1>VILLAKOIRA SIVUSTO</h1>
+                <P>Tällä sivustolla käsitellään villakoiratietoa.</P>
+            </section>
+            <section class="gallery">
+                <div class="image">
+                    <img src="./kuvat/toy.jpg" alt="Toyvillakoira" height="426" width="640">
+                    <p>Toyvillakoira</p>
+                </div>
+                <div class="image">
+                    <img src="./kuvat/kaapio.jpg" alt="Kääpiövillakoira" height="426" width="640">
+                    <p>Kääpiövillakoira</p>
+                </div>
+                <div class="image">
+                    <img src="./kuvat/medium.jpg" alt="Keskikokoinen villakoira" height="426" width="640">
+                    <p>Keskikokoinen villakoira</p>
+                </div>
+                <div class="image">
+                    <img src="./kuvat/big.jpg" alt="Isovillakoira" height="426" width="640">
+                    <p>Isovillakoira</p>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p><strong>&copy; Johanna Hietala</strong> 2024</p>
+            <p>Tämä sivusto on Web-kehittämisen perusteet -kurssin harjoitystyö</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

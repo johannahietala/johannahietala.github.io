@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<!--Tämä osio sisältää sivustolle, selaimille tärkeää tietoa-->
+
+<head>
+    <!--Jokaisella sivulla uniikki otsikko-->
+    <title>Rodusta</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Johanna Hietala">
+    <meta name="description" content="Rotutietoa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./kuvat/favicon.ico">
+    <link rel="stylesheet" href="sivu2.css">
+</head>
+
+<!--Käyttäjälle näkyvä osio alkaa tästä-->
+
+<body>
+    <!--containerin sisällä kaikki toiminto-->
+    <div class="container">
+        <header class="header">
+            <div class="logo">VILLAKOIRAT</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="etusivu.html">Etusivu</a></li>
+                    <li><a href=sivu2.html>Rodusta</a></li>
+                    <li><a href="sivu3.html">Turkinhoito</a></li>
+                    <li><a href="sivu4.html">Harrastus</a></li>
+                    <li><a href="lomake.html">Lomake</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <!--mainin alla voi olla section tai article-->
+            <section class="rivi">
+                <div class="sarake">
+                    <h1>KOOT JA VÄRIT</h1><br>
+                    <p>Villakoirarotuja on neljä: toyvillakoira, kääpiövillakoira, keskikokoinen villakoira sekä
+                        isovillakoira.</p><br>
+                    <p>Villakoira on yksivärinen ja värit ovat musta, valkoinen, ruskea, aprikoosi,
+                        punainen ja harmaa.</p>
+                </div>
+                <div class="image">
+                    <img src="./kuvat/koot.jpg" alt="Erikokoisia villakoiria" height="217" width="489">
+                </div>
+            </section>
+
+            <section class="rivi">
+                <div>
+                    <h2>Kokotaulukko</h2><br>
+                    <table class="taulukko">
+                        <tr>
+                            <th></th>
+                            <th>Paino (kg)</th>
+                            <th>Säkäkorkeus (cm)</th>
+                        </tr>
+                        <tr>
+                            <th>Toyvillakoira</th>
+                            <td>3 - 4</td>
+                            <td>23 - 28</td>
+                        </tr>
+                        <tr>
+                            <th>Kääpiövillakoira</th>
+                            <td>4 - 5</td>
+                            <td>28 - 35</td>
+                        </tr>
+                        <tr>
+                            <th>Keskikokoinen villakoira</th>
+                            <td>8 - 10</td>
+                            <td>35 - 45</td>
+                        </tr>
+                        <tr>
+                            <th>Isovillakoira</th>
+                            <td>20 - 25</td>
+                            <td>45 - 62</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <h2>Avaintietoja</h2><br>
+                    <table class="taulukko">
+                        <tr>
+                            <th>Alkuperämaa</th>
+                            <td>Ranska</td>
+                        </tr>
+                        <tr>
+                            <th>Määrä Suomessa</th>
+                            <td>31374</td>
+
+                        </tr>
+                        <tr>
+                            <th>Elinikä</th>
+                            <td>n. 10 - 14 vuotta</td>
+                        </tr>
+                        <tr>
+                            <th>Alkuperäinen käyttö</th>
+                            <td>lintukoira</td>
+                        </tr>
+                        <tr>
+                            <th>Nykyinen käyttö</th>
+                            <td>seurakoira</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="rivi">
+                <div class="video">
+                    <video controls autoplay loop muted>
+                        <source src="./kuvat/villakoira.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="sarake">
+                    <h1>VILLAKOIRA ON…</h1><br>
+                    <p>Luonteeltaan iloinen ja vilkas. Se nauttii keskipisteenä olemisesta. Lisäksi villakoira on
+                        miellyttämisenhaluinen ja oppimiskykyinen. Villakoira pitää toiminnasta ja se sopii
+                        monipuoliseen harrastustoimintaan.</p><br>
+
+                </div>
+            </section>
+
+            <section class="rivi">
+                <p>Lähteet:</p>
+                <a href="https://villakoirakerho.com/" target="_blank">Suomen villakoirakerho</a><br>
+                <a href="https://fi.wikipedia.org/wiki/Villakoira" target="_blank">Wikipedia</a>
+            </section>
+
+
+        </main>
+
+
+        <footer class="footer">
+            <p><strong>&copy; Johanna Hietala</strong> 2024</p>
+            <p>Tämä sivusto on Web-kehittämisen perusteet -kurssin harjoitystyö</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
