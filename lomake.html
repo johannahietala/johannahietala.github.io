@@ -9,8 +9,8 @@
   <meta name="author" content="Johanna Hietala">
   <meta name="description" content="Tietovisa">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./favicon.png?">
-  <link rel="stylesheet" href="sivu2.css">
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="sivu.css">
 </head>
 
 <!--Käyttäjälle näkyvä osio alkaa tästä-->
@@ -23,7 +23,7 @@
       <nav class="nav">
         <ul>
           <li><a href="etusivu.html">Etusivu</a></li>
-          <li><a href=sivu2.html>Rodusta</a></li>
+          <li><a href="sivu2.html">Rodusta</a></li>
           <li><a href="sivu3.html">Turkinhoito</a></li>
           <li><a href="sivu4.html">Harrastus</a></li>
         </ul>
@@ -33,8 +33,8 @@
     <main class="main">
 
       <!--Otsikko-->
-      <section class="visa">
-        <h1>VILLAKOIRA TIETOVISA</h1><br>
+      <section class="container2">
+        <h1 style="text-align: center">VILLAKOIRA TIETOVISA</h1><br><br>
 
         <!--Lomakkeen aloitus-->
         <div> <!--Email, johon lomake lähetetään-->
@@ -43,7 +43,7 @@
 
             <!--input type="text"-->
             <label for="nimi">Nimi*:</label>
-            <input type="text" id="nimi" name="nimi" placeholder="Etu- ja sukunimi" autofocus required>
+            <input type="text" id="nimi" name="nimi" placeholder="Etu- ja sukunimi" required>
             <br><br>
 
             <!--input type="email"-->
@@ -145,7 +145,7 @@
             <!--select + option-->
             <!--fieldset + legend-->
             <label for="omistajuus">Oletko sinä villakoiran omistaja?</label>
-            <select name="omistajuus" id="omistajuus" multiple size="3">
+            <select name="omistajuus" id="omistajuus" multiple size="2">
               <option value="kylla">Kyllä olen</option>
               <option value="ei">En ole</option>
               <option value="suunnitelmissa">En ole, mutta villakoiran hankinta on suunnitelmissa</option>

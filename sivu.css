@@ -1,0 +1,206 @@
+/* Yleiset tyylit */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Muut paitsi, lomake*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    /*logo vasemmalla, navigointi oikealla */
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* pystysuuntainen */
+    background-color: rgb(37, 36, 36);
+    color: white;
+    /*kiinnitetään header ylhäälle*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    /*alaviiva pois*/
+}
+
+.nav ul li a:hover {
+    color: burlywood;
+    transition: color 0.3s;
+    /*pehmeä siirtymä hover väriin*/
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    margin: 60px 5% 0 5%;
+    /* Sama korkeus kuin headerilla */
+}
+
+.rivi {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.sarake {
+    padding: 10px;
+    text-align: left;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.video {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    height: 60px;
+}
+
+/* sivu3 ja sivu4 */
+.sarake_valk {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.taulukko {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid lightgrey;
+    text-align: left;
+    padding: 8px;
+    white-space: nowrap; /* Estää rivittymisen */
+}
+
+td {
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: 8px;
+    white-space: nowrap; /* Estää rivittymisen */
+}
+
+/*Lomakkeen container*/
+.container2 {
+    max-width: 600px;
+    /* ylös ja alas 0px, lomake asettuu keskelle => 
+    automaatti marginaalit vasen ja oikea */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(18, 17, 17);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.radio-input {
+    margin: 0 0.5em 0;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: normal;
+}
+
+.laheta {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+button[type=submit], button[type=reset] {
+    padding: 5px;
+}
+
+button:hover{
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+/* Mobiilinäkymän tyylit */
+@media (max-width: 768px) {
+
+    .container,
+    .rivi {
+        flex-direction: column;
+        /* Asettaa elementit päällekkäin */
+    }
+}

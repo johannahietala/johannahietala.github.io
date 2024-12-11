@@ -3,15 +3,14 @@
 
 <!--Tämä osio sisältää sivustolle, selaimille tärkeää tietoa-->
 
-<head>
-    <!--Jokaisella sivulla uniikki otsikko-->
+<head> <!--Jokaisella sivulla uniikki otsikko-->
     <title>Rodusta</title>
     <meta charset="UTF-8">
     <meta name="author" content="Johanna Hietala">
     <meta name="description" content="Rotutietoa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./favicon.png">
-    <link rel="stylesheet" href="sivu2.css">
+    <link rel="stylesheet" href="sivu.css">
 </head>
 
 <!--Käyttäjälle näkyvä osio alkaa tästä-->
@@ -24,27 +23,38 @@
             <nav class="nav">
                 <ul>
                     <li><a href="etusivu.html">Etusivu</a></li>
-                    <li><a href=sivu2.html>Rodusta</a></li>
                     <li><a href="sivu3.html">Turkinhoito</a></li>
                     <li><a href="sivu4.html">Harrastus</a></li>
-                    <li><a href="lomake.html">Lomake</a> </li>
+                    <li><a href="lomake.html">Tietovisa</a> </li>
                 </ul>
             </nav>
         </header>
+
         <main class="main">
-            <!--mainin alla voi olla section tai article-->
+
+            <!--Ensimmäinen rivi, loppuu taulukkoon-->
             <section class="rivi">
                 <div class="sarake">
                     <h1>KOOT JA VÄRIT</h1><br>
                     <p>Villakoirarotuja on neljä: toyvillakoira, kääpiövillakoira, keskikokoinen villakoira sekä
-                        isovillakoira.</p><br>
-                    <p>Villakoira on yksivärinen ja värit ovat musta, valkoinen, ruskea, aprikoosi,
-                        punainen ja harmaa.</p>
+                        isovillakoira. Villakoira on yksivärinen ja värit ovat musta, valkoinen, ruskea, aprikoosi,
+                        punainen ja harmaa. Villakoiria on myös monivärisenä.</p><br>
+                    <h1>HISTORIA</h1><br>
+                    <P>Villakoiraa tarkoittava ranskan kielen sana caniche tulee etymologisesti naarassorsaa
+                        tarkoittavasta ranskankielen sanasta cane. Myös monissa muissa kielissä rodun nimi liittyy
+                        vedessä toimimiseen. Alun perin näitä koiria käytettiin vesilintujen metsästykseen. Rotu
+                        polveutuu barbetista, jolta se on perinyt monia ominaisuuksiaan. Vuonna 1743 rotua kutsuttiin
+                        barbet-nartun ranskankielisellä nimellä caniche. Sittemmin barbet ja villakoira eriytyivät
+                        vähitellen ja kasvattajat ponnistelivat säilyttääkseen alkuperäisen tyypin. Villakoirasta tuli
+                        hyvin suosittu seurakoira ystävällisen, iloisen ja uskollisen luonteensa ansiosta. Neljän
+                        kokomuunnoksen ja eri värivaihtoehtojen joukosta jokainen voi valita mieleisensä.</P>
                 </div>
+
                 <div class="image">
-                    <img src="./koot.jpg" alt="Erikokoisia villakoiria" height="217" width="489">
+                    <img src="./koot.jpg" alt="Erikokoisia villakoiria">
                 </div>
-  <div>
+
+                <div>
                     <h2>Kokotaulukko</h2><br>
                     <table class="taulukko">
                         <tr>
@@ -74,7 +84,11 @@
                         </tr>
                     </table>
                 </div>
- <div>
+            </section>
+
+            <!--Toinen rivi, alkaa taulukolla-->
+            <section class="rivi">
+                <div>
                     <h2>Avaintietoja</h2><br>
                     <table class="taulukko">
                         <tr>
@@ -84,7 +98,6 @@
                         <tr>
                             <th>Määrä Suomessa</th>
                             <td>31374</td>
-
                         </tr>
                         <tr>
                             <th>Elinikä</th>
@@ -100,34 +113,33 @@
                         </tr>
                     </table>
                 </div>
-            </section>
 
-           
-
-            <section class="rivi">
                 <div class="video">
-                    <video controls autoplay loop muted>
+                    <video controls loop muted>
                         <source src="./villakoira.mp4" type="video/mp4">
                     </video>
                 </div>
+
                 <div class="sarake">
                     <h1>VILLAKOIRA ON…</h1><br>
                     <p>Luonteeltaan iloinen ja vilkas. Se nauttii keskipisteenä olemisesta. Lisäksi villakoira on
                         miellyttämisenhaluinen ja oppimiskykyinen. Villakoira pitää toiminnasta ja se sopii
                         monipuoliseen harrastustoimintaan.</p><br>
-
+                    <p>Villakoira on yleisvaikutelmaltaan sopusuhtainen, ryhdikäs ja tyylikäs. Näyttelyissä villakoirien
+                        upea turkki ja elegantti olemus herättävät huomiota ja parhaita yksilöitä nähdään usein ryhmä-
+                        ja BIS-kehien kärkipaikoilla.</p><br>
+                    <p>Kauniisti leikattu, itsevarma villakoira on kuin elävä taideteos mutta turkkinsa alla sillä on
+                        kuitenkin normaali peruskoiran rakenne.</p>
                 </div>
             </section>
 
-            <section class="rivi">
+            <!--Lähteet ja linkit-->
+            <div class="rivi">
                 <p>Lähteet:</p>
                 <a href="https://villakoirakerho.com/" target="_blank">Suomen villakoirakerho</a><br>
                 <a href="https://fi.wikipedia.org/wiki/Villakoira" target="_blank">Wikipedia</a>
-            </section>
-
-
+            </div>
         </main>
-
 
         <footer class="footer">
             <p><strong>&copy; Johanna Hietala</strong> 2024</p>

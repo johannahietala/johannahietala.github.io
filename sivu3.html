@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <!--Tämä osio sisältää sivustolle, selaimille tärkeää tietoa-->
 
-<head>
-    <!--Jokaisella sivulla uniikki otsikko-->
+<head> <!--Jokaisella sivulla uniikki otsikko-->
     <title>Turkinhoito</title>
     <meta charset="UTF-8">
     <meta name="author" content="Johanna Hietala">
     <meta name="description" content="Turkinhoito">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./favicon.png?">
-    <link rel="stylesheet" href="sivu2.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="sivu.css">
 </head>
+
 <!--Käyttäjälle näkyvä osio alkaa tästä-->
 
 <body>
@@ -22,15 +23,16 @@
             <nav class="nav">
                 <ul>
                     <li><a href="etusivu.html">Etusivu</a></li>
-                    <li><a href=sivu2.html>Rodusta</a></li>
-                    
+                    <li><a href="sivu2.html">Rodusta</a></li>
                     <li><a href="sivu4.html">Harrastus</a></li>
                     <li><a href="lomake.html">Tietovisa</a> </li>
                 </ul>
             </nav>
         </header>
+
         <main class="main">
-            <!--mainin alla voi olla section tai article-->
+
+            <!--Ensimmäinen rivi-->
             <section class="rivi">
                 <div class="image">
                     <img src="./puudeli.jpg" alt="Valkoinen villakoira" height="327" width="372">
@@ -53,6 +55,7 @@
                 </div>
             </section>
 
+            <!--Toinen rivi-->
             <section class="rivi">
                 <div class="sarake_valk">
                     <h1>HARJAUS</h1><br>
@@ -74,12 +77,12 @@
                 </div>
             </section>
 
-            <section class="rivi">
+            <!--Kolmas rivi-->
+            <div class="rivi">
                 <div class="image">
                     <img src="./villakoira.jpg" alt="Villakoira" height="322" width="483">
                 </div>
                 <div class="sarake">
-                    <h1></h1><br>
                     <p>Villakoiran pentu kuuluu luovuttaa uudelle omistajalleen pestynä ja trimmattuna. Jotta pentu
                         tottuisi käsittelyyn, se olisi tästä eteenpäin hyvä pestä neljän viikon välein. Kuonon, tassut
                         ja hännäntyven voi ajella kahden viikon välein ja kynnet leikataan viikoittain. Hoitopöydällä
@@ -89,21 +92,20 @@
                 <div class="image">
                     <img src="./trimmaus.png" alt="Valkoinen villakoira" height="322" width="328">
                 </div>
-            </section>
-<!--Lähteet ja linkit-->
-            <section class="rivi">
+            </div>
+
+            <!--Lähteet ja linkit-->
+            <div class="rivi">
                 <p>Lähteet:</p>
                 <a href="https://villakoirakerho.com/" target="_blank">Suomen villakoirakerho</a><br>
                 <a href="https://fi.wikipedia.org/wiki/Villakoira" target="_blank">Wikipedia</a>
-            </section>
+            </div>
         </main>
-
 
         <footer class="footer">
             <p><strong>&copy; Johanna Hietala</strong> 2024</p>
             <p>Tämä sivusto on Web-kehittämisen perusteet -kurssin harjoitystyö</p>
         </footer>
-
     </div>
 </body>
 
