@@ -3,17 +3,20 @@
 
 <!--Tämä osio sisältää sivustolle, selaimille tärkeää tietoa-->
 
-<head>
-  <title>Lomake</title>
-  <meta charset="UTF-8" />
+<head> <!--Jokaisella sivulla uniikki otsikko-->
+  <title>Tietovisa</title>
+  <meta charset="UTF-8">
   <meta name="author" content="Johanna Hietala">
-  <meta name="description" content="Lomake">
+  <meta name="description" content="Tietovisa">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="./kuvat/favicon.ico">
+  <link rel="icon" type="image/png" href="./favicon.png?">
   <link rel="stylesheet" href="sivu2.css">
 </head>
 
+<!--Käyttäjälle näkyvä osio alkaa tästä-->
+
 <body>
+  <!--containerin sisällä kaikki toiminto-->
   <div class="container">
     <header class="header">
       <div class="logo">VILLAKOIRAT</div>
@@ -23,157 +26,163 @@
           <li><a href=sivu2.html>Rodusta</a></li>
           <li><a href="sivu3.html">Turkinhoito</a></li>
           <li><a href="sivu4.html">Harrastus</a></li>
-          <li><a href="lomake.html">Lomake</a> </li>
         </ul>
       </nav>
     </header>
+
     <main class="main">
-      <!--mainin alla voi olla section tai article-->
+
+      <!--Otsikko-->
       <section class="visa">
-        <h1>Villakoira tietovisa</h1> <br>
+        <h1>VILLAKOIRA TIETOVISA</h1><br>
+
         <!--Lomakkeen aloitus-->
-        <form name="tietovisa" method="POST" target="_blank">
+        <div> <!--Email, johon lomake lähetetään-->
+          <form action="mailto:johanna.hietala@centria.fi" name="tietovisa" method="POST" target="_blank"
+            enctype="text/plain">
 
-          <!--input type="text"-->
-          <label for="nimi">Nimi*:</label>
-          <input type="text" id="nimi" name="enimi" placeholder="Etu- ja sukunimi" autofocus required>
-          <br><br>
-          <!--input type="email"-->
-          <label for="email">Sähköposti*:</label>
-          <input type="email" id="email" name="email" required>
-          <br><br>
-          <!--input type="date"-->
-          <label for="spaiva">Syntymäpäivä:</label>
-          <input type="date" id="spaiva" name="spaiva">
-          <br><br>
+            <!--input type="text"-->
+            <label for="nimi">Nimi*:</label>
+            <input type="text" id="nimi" name="nimi" placeholder="Etu- ja sukunimi" autofocus required>
+            <br><br>
 
-          <!--input type="color"-->
-          <label for="vari">Valitse lempivärisi:</label>
-          <input type="color" id="vari" name="vari" title="Klikkaa palkkia ja valitse väri">
-          <br><br>
-          <!--Radiopainikkeet-->
-          <!--fieldset + legend-->
-          <fieldset>
-            <legend>Sukupuoli:</legend>
-            <label class="radio" for="nainen">
-              <input class="radio-input" type="radio" id="nainen" name="sukupuoli" value="Nainen">
-              Nainen</label>
+            <!--input type="email"-->
+            <label for="email">Sähköposti*:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!--input type="date"-->
+            <label for="spaiva">Syntymäpäivä:</label>
+            <input type="date" id="spaiva" name="spaiva">
+            <br><br>
+
+            <!--Radiopainikkeet-->
+            <!--fieldset + legend-->
+            <fieldset>
+              <legend>Sukupuoli:</legend>
+              <label class="radio" for="nainen">
+                <input class="radio-input" type="radio" id="nainen" name="sukupuoli" value="Nainen">
+                Nainen</label>
+              <br>
+              <label class="radio" for="mies">
+                <input class="radio-input" type="radio" id="mies" name="sukupuoli" value="Mies">
+                Mies</label>
+              <!--lisätään tähän muu-->
+              <br>
+              <label class="radio" for="muu">
+                <input class="radio-input" type="radio" id="muu" name="sukupuoli" value="Muu">
+                Muu </label>
+            </fieldset>
             <br>
-            <label class="radio" for="mies">
-              <input class="radio-input" type="radio" id="mies" name="sukupuoli" value="Mies">
-              Mies</label>
-            <!--lisätään tähän muu-->
+
+            <!--Kysymykset-checkbox-->
+            <!--fieldset + legend-->
+            <p><strong>Kysymys 1:</strong></p>
+            <fieldset>
+              <legend>Kuinka monta kokomuunnosta villakoirarodusta on olemassa?</legend>
+              <label class="radio"><input class="radio-input" type="checkbox" id="2" name="kokomuunnoksia" value="2">
+                2</label>
+              <br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="3" name="kokomuunnoksia" value="3">
+                3</label><br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="4" name="kokomuunnoksia" value="4">
+                4</label>
+            </fieldset>
             <br>
-            <label class="radio" for="muu">
-              <input class="radio-input" type="radio" id="muu" name="sukupuoli" value="Muu">
-              Muu </label>
-          </fieldset>
-          <br>
-          <!--checkbox-->
-          <!--fieldset + legend-->
-          <label for="kysymys1">Kysymys 1:</label>
-          <fieldset>
-            <legend>Kuinka monta kokomuunnosta villakoirarodusta on olemassa?</legend>
-            <label class="radio"><input class="radio-input" type="checkbox" id="2" name="kokomuunnoksia" value="2">
-              2</label>
+
+            <p><strong>Kysymys 2:</strong></p>
+            <fieldset>
+              <legend>Mikä on villakoiran alkuperäinen käyttötarkoitus?</legend>
+              <label class="radio"><input class="radio-input" type="checkbox" id="seurakoira" name="alkuperainen"
+                  value="seurakoira"> seurakoira</label>
+              <br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="lintukoira" name="alkuperainen"
+                  value="lintukoira"> lintukoira</label><br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="paimenkoira" name="alkuperainen"
+                  value="paimenkoira"> paimenkoira</label>
+            </fieldset>
             <br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="3" name="kokomuunnoksia" value="3">
-              3</label><br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="4" name="kokomuunnoksia" value="4">
-              4</label>
-          </fieldset>
-          <br>
-          <label for="kysymys2">Kysymys 2:</label>
-          <fieldset>
-            <legend>Mikä on villakoiran alkuperäinen käyttötarkoitus?</legend>
-            <label class="radio"><input class="radio-input" type="checkbox" id="seurakoira" name="alkuperäinen"
-                value="seurakoira"> seurakoira</label>
+
+            <p><strong>Kysymys 3:</strong></p>
+            <fieldset>
+              <legend>Minkä värinen villakoira voi olla?</legend>
+              <label class="radio"><input class="radio-input" type="checkbox" id="aprikoosi" name="vari"
+                  value="aprikoosi"> aprikoosi</label>
+              <br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="taplikas" name="vari"
+                  value="taplikas">
+                täplikäs</label><br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="musta" name="vari" value="musta">
+                musta</label><br>
+            </fieldset>
             <br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="lintukoira" name="alkuperäinen"
-                value="lintukoira"> lintukoira</label><br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="paimenkoira" name="alkuperäinen"
-                value="paimenkoira"> paimenkoira</label>
-          </fieldset>
-          <br>
-          <label for="kysymys3">Kysymys 3:</label>
-          <fieldset>
-            <legend>Minkä värinen villakoira voi olla?</legend>
-            <label class="radio"><input class="radio-input" type="checkbox" id="aprikoosi" name="väri"
-                value="aprikoosi"> aprikoosi</label>
+
+            <p><strong>Kysymys 4:</strong></p>
+            <fieldset>
+              <legend>Kuinka pitkä elinikä villakoirilla yleensä on?</legend>
+              <label class="radio"><input class="radio-input" type="checkbox" id="6" name="elinikä" value="6"> 6</label>
+              <br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="10" name="elinikä" value="10">
+                10</label><br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="14" name="elinikä" value="14">
+                14_vuotta</label><br>
+            </fieldset>
             <br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="taplikas" name="väri" value="taplikas">
-              täplikäs</label><br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="musta" name="väri" value="musta">
-              musta</label><br>
-          </fieldset>
-          <br>
 
-          <label for="kysymys4">Kysymys 4:</label>
-          <fieldset>
-            <legend>Kuinka pitkä elinikä villakoirilla yleensä on?</legend>
-            <label class="radio"><input class="radio-input" type="checkbox" id="6" name="elinikä" value="6"> 6</label>
+            <p><strong>Kysymys 5:</strong></p>
+            <fieldset>
+              <legend>Mikä näistä ei ole villakoiran luonteenpiirre?</legend>
+              <label class="radio"><input class="radio-input" type="checkbox" id="miellyttamisenhaluinen" name="luonne"
+                  value="miellyttamisenhaluinen"> miellyttämisenhaluinen</label>
+              <br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="yksinainen" name="luonne"
+                  value="yksinainen"> yksinäisyyttärakastava</label><br>
+              <label class="radio"><input class="radio-input" type="checkbox" id="oppimiskykyinen" name="luonne"
+                  value="oppimiskykyinen"> oppimiskykyinen</label><br>
+            </fieldset>
             <br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="10" name="elinikä" value="10">
-              10</label><br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="14" name="elinikä" value="14">
-              14_vuotta</label><br>
-          </fieldset>
-          <br>
 
-          <label for="kysymys5">Kysymys 5:</label>
-          <fieldset>
-            <legend>Mikä näistä ei ole villakoiran luonteenpiirre?</legend>
-            <label class="radio"><input class="radio-input" type="checkbox" id="miellyttämisenhaluinen" name="luonne"
-                value="miellyttamisenhaluinen"> miellyttämisenhaluinen</label>
-            <br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="yksinainen" name="luonne"
-                value="yksinainen"> yksinäisyyttä_rakastava</label><br>
-            <label class="radio"><input class="radio-input" type="checkbox" id="oppimiskykyinen" name="luonne"
-                value="oppimiskykyinen"> oppimiskykyinen</label><br>
-          </fieldset>
-          <br>
+            <!--select + option-->
+            <!--fieldset + legend-->
+            <label for="omistajuus">Oletko sinä villakoiran omistaja?</label>
+            <select name="omistajuus" id="omistajuus" multiple size="3">
+              <option value="kylla">Kyllä olen</option>
+              <option value="ei">En ole</option>
+              <option value="suunnitelmissa">En ole, mutta villakoiran hankinta on suunnitelmissa</option>
+            </select>
+            <br><br>
 
-          <!--select + option-->
-          <!--fieldset + legend-->
-          <label for="omistajuus">Oletko sinä villakoiran omistaja?</label>
-          <select name="omistajuus" id="omistajuus" multiple size="2">
-            <option value="kylla"> Kyllä olen</option>
-            <option value="ei"> En ole</option>
-            <option value="suunnitelmissa">En ole, mutta koiran hankinta on suunnitelmissa</option>
-          </select>
-          <br><br>
-          <!-- input type="range" -->
-          <label for="kokemus">Ovatko villakoirat kivoja?</label>
-          <p>0 ---- 10</p>
-          <input type="range" id="kokemus" name="kokemus" min="0" max="10" step="1">
-          <p>0 = maanvaiva, 10 = Super ihania!</p>
-          <br><br>
-          <!-- input type="file" -->
-          <label for="file">Lataa tähän halutessasi villakoirasi kuva</label>
-          <input type="file" name="file" id="file">
-          <br><br>
-          <!--textarea-->
-          <label for="palaute">Palaute</label>
-          <textarea name="palaute" id="palaute" rows="4" placeholder="Kirjoita palaute tähän"></textarea>
-          <br><br>
+            <!-- input type="range"-->
+            <label for="kokemus">Ovatko villakoirat kivoja?</label>
+            <p>0 ---- 10</p>
+            <input type="range" id="kokemus" name="kokemus" min="0" max="10" step="1">
+            <p>0 = maanvaiva, 10 = Super ihania!</p>
+            <br><br>
 
-          <!--button-->
-          <div class="laheta">
-            <button type="submit">Lähetä</button>
-            <button type="reset">Tarkista oikeat vastaukset</button>
-          </div>
-        </form>
-  </div>
-  </section>
+            <!-- Lataa kuva -->
+            <label for="file">Lataa tähän halutessasi villakoirasi kuva</label>
+            <input type="file" name="file" id="file">
+            <br><br>
 
+            <!--Textarea-->
+            <label for="palaute">Palaute</label>
+            <textarea name="palaute" id="palaute" rows="4" placeholder="Kirjoita palaute tähän"></textarea>
+            <br><br>
 
-  </main>
+            <!--Button-->
+            <div class="laheta">
+              <button type="submit">Lähetä</button>
+              <button type="reset">Tyhjennä kentät</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
-
-  <footer class="footer">
-    <p><strong>&copy; Johanna Hietala</strong> 2024</p>
-    <p>Tämä sivusto on Web-kehittämisen perusteet -kurssin harjoitystyö</p>
-  </footer>
+    <footer class="footer">
+      <p><strong>&copy; Johanna Hietala</strong> 2024</p>
+      <p>Tämä sivusto on Web-kehittämisen perusteet -kurssin harjoitystyö</p>
+    </footer>
 
   </div>
 </body>
