@@ -106,26 +106,44 @@ body {
     width: 100%;
 }
 
-.taulukko {
+.taulukko-container {
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: space-around;
+    gap: 10px;
+    width: 100%; /* Skaalautuu näytön leveydelle */
+}
+
+.taulukko {
+    flex: 1; /* Jokainen taulukko vie yhtä suuren osan tilasta */
+    min-width: 0; /* Sallii taulukoiden kutistua, jos tila on rajallinen */
+    border: 1px solid black; /* Rajaa taulukot selkeyden vuoksi */
+    
+}
+
+.taulukko-wrapper {
+    flex: 1; /* Skaalautuu tilan mukaan */
+    min-width: 0; /* Sallii taulukoiden kutistua tarvittaessa */
+    margin: 10px; /* Lisää hieman tilaa jokaisen taulukon ympärille */
+}
+
+.taulukko-wrapper h2 {
+    text-align: left;
+    margin-bottom: 10px; /* Lisää tilaa otsikon ja taulukon väliin */
 }
 
 table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 th {
-    border: 1px solid lightgrey;
+    border: 1px solid;
     text-align: left;
     padding: 8px;
     white-space: nowrap; /* Estää rivittymisen */
 }
 
 td {
-    border: 1px solid lightgrey;
+    border: 1px solid;
     text-align: center;
     padding: 8px;
     white-space: nowrap; /* Estää rivittymisen */
