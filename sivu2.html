@@ -33,7 +33,7 @@
 
         <main class="main">
 
-            <!--Ensimmäinen rivi, loppuu taulukkoon-->
+            <!--Ensimmäinen rivi-->
             <section class="rivi">
                 <div class="sarake">
                     <h1>KOOT JA VÄRIT</h1><br>
@@ -50,18 +50,20 @@
                         hyvin suosittu seurakoira ystävällisen, iloisen ja uskollisen luonteensa ansiosta. Neljän
                         kokomuunnoksen ja eri värivaihtoehtojen joukosta jokainen voi valita mieleisensä.</P>
                 </div>
-
                 <div class="image">
                     <img src="./koot.jpg" alt="Erikokoisia villakoiria">
                 </div>
-
-                <div>
-                    <h2>Kokotaulukko</h2><br>
+            </section>
+            
+            <!--Toinen rivi-->
+            <div class="taulukko-container">
+                <div class="taulukko-wrapper">
+                    <h2>Kokotaulukko</h2>
                     <table class="taulukko">
                         <tr>
                             <th></th>
-                            <th>Paino (kg)</th>
-                            <th>Säkäkorkeus (cm)</th>
+                            <th style="text-align: center;">Paino (kg)</th>
+                            <th style="text-align: center;">Säkäkorkeus (cm)</th>
                         </tr>
                         <tr>
                             <th>Toyvillakoira</th>
@@ -85,13 +87,12 @@
                         </tr>
                     </table>
                 </div>
-            </section>
 
-            <!--Toinen rivi, alkaa taulukolla-->
-            <section class="rivi">
-                <div>
-                    <h2>Avaintietoja</h2><br>
+                <div class="taulukko-wrapper">
+                    <h2>Avaintietoja</h2>
+
                     <table class="taulukko">
+
                         <tr>
                             <th>Alkuperämaa</th>
                             <td>Ranska</td>
@@ -114,13 +115,15 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
+            <!--Kolmas rivi-->
+            <section class="rivi">
                 <div class="video">
                     <video controls loop muted>
                         <source src="./villakoira.mp4" type="video/mp4">
                     </video>
                 </div>
-
                 <div class="sarake">
                     <h1>VILLAKOIRA ON…</h1><br>
                     <p>Luonteeltaan iloinen ja vilkas. Se nauttii keskipisteenä olemisesta. Lisäksi villakoira on
