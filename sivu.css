@@ -109,25 +109,33 @@ body {
 .taulukko-container {
     display: flex;
     gap: 10px;
-    width: 100%; /* Skaalautuu näytön leveydelle */
-}
-
-.taulukko {
-    flex: 1; /* Jokainen taulukko vie yhtä suuren osan tilasta */
-    min-width: 0; /* Sallii taulukoiden kutistua, jos tila on rajallinen */
-    border: 1px solid black; /* Rajaa taulukot selkeyden vuoksi */
-    
+    width: 100%;
+    /* Skaalautuu näytön leveydelle */
 }
 
 .taulukko-wrapper {
-    flex: 1; /* Skaalautuu tilan mukaan */
-    min-width: 0; /* Sallii taulukoiden kutistua tarvittaessa */
-    margin: 10px; /* Lisää hieman tilaa jokaisen taulukon ympärille */
+    flex: 1;
+    /* Skaalautuu tilan mukaan */
+    min-width: 0;
+    /* Sallii taulukoiden kutistua tarvittaessa */
+    margin: 10px;
+    /* Lisää hieman tilaa jokaisen taulukon ympärille */
 }
 
 .taulukko-wrapper h2 {
     text-align: left;
-    margin-bottom: 10px; /* Lisää tilaa otsikon ja taulukon väliin */
+    margin-bottom: 10px;
+    /* Lisää tilaa otsikon ja taulukon väliin */
+}
+
+.taulukko {
+    flex: 1;
+    /* Jokainen taulukko vie yhtä suuren osan tilasta */
+    min-width: 0;
+    /* Sallii taulukoiden kutistua, jos tila on rajallinen */
+    border: 1px solid black;
+    /* Rajaa taulukot selkeyden vuoksi */
+
 }
 
 table {
@@ -139,14 +147,16 @@ th {
     border: 1px solid;
     text-align: left;
     padding: 8px;
-    white-space: nowrap; /* Estää rivittymisen */
+    white-space: nowrap;
+    /* Estää rivittymisen */
 }
 
 td {
     border: 1px solid;
     text-align: center;
     padding: 8px;
-    white-space: nowrap; /* Estää rivittymisen */
+    white-space: nowrap;
+    /* Estää rivittymisen */
 }
 
 /*Lomakkeen container*/
@@ -169,7 +179,9 @@ label {
     margin-bottom: 5px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -204,11 +216,12 @@ legend {
     justify-content: flex-end;
 }
 
-button[type=submit], button[type=reset] {
+button[type=submit],
+button[type=reset] {
     padding: 5px;
 }
 
-button:hover{
+button:hover {
     border: 2px solid black;
     opacity: 0.8;
 }
